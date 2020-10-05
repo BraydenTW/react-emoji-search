@@ -7,14 +7,12 @@ import data from './data.json'
 
 function Container() {
   const [emojiData, setEmojiData] = useState([]);
-  const [emojiFiltered, setEmojiFiltered] = useState([]);
   const [search, setSearch] = useState("");
   useEffect(() => {
     setEmojiData(data);
   }, [])
   const onChange = val => {
     setSearch(val);
-    setEmojiFiltered(search === "" ? emojiData : emojiData.filter(item => item.keywords.includes(search)))
   }
   return (
     <div className="container">
