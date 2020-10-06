@@ -18,7 +18,7 @@ function Container() {
     <div className="container">
       <Header />
       <Search onChange={onChange} />
-      <Results emojiFiltered={search === "" ? emojiData : emojiData.filter(item => item.keywords.includes(search))} search={search} />
+      <Results emojiFiltered={search === "" ? emojiData : emojiData.filter(item => item.keywords.includes(search))} />
     </div>
   )
 }
