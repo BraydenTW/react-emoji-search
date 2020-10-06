@@ -12,7 +12,7 @@ function Container() {
     setEmojiData(data);
   }, [])
   const onChange = val => {
-    setSearch(val);
+    setSearch(val.toLowerCase());
   }
   return (
     <div className="container">
