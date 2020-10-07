@@ -13,6 +13,7 @@ function Item(props) {
       title="Copy Emoji to Clipboard 📋"
       onClick={handleClick}
       data-clipboard-text={props.symbol}
+      data-keywords={props.keywords}
     >
       <div className={`item-copy ${fadeIn?'label-true':'label-false'}`}>
         Copied!
