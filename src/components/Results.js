@@ -13,7 +13,7 @@ function Results(props) {
   return (
     <div className="results">
       {props.emojiFiltered.slice(0, 100).map((emoji) => (
-        <Item id={uuidv4()} symbol={emoji.symbol} title={emoji.title} />
+        <Item id={uuidv4()} symbol={emoji.symbol} title={emoji.title} keywords={emoji.keywords} />
 			))}
     </div>
   )
