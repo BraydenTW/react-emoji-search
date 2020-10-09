@@ -70,7 +70,7 @@ body{
 
 .item{
   position: relative;
-  width: auto;
+  width: 180px;
   height: 180px;
   background: white;
   margin: 15px;

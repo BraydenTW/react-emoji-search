@@ -7,18 +7,52 @@ import data from './data.json'
 
 function Container() {
   const [emojiData, setEmojiData] = useState([]);
-  const [search, setSearch] = useState("");
+  const [newEmojiData, setNewEmojiData] = useState([]);
+  const [searchQuery, setSearchQuery] = useState("");
+
   useEffect(() => {
     setEmojiData(data);
   }, [])
   const onChange = val => {
-    setSearch(val.toLowerCase());
+    setSearchQuery(val.toLowerCase());
+
+    let queryKeywords = val.toLowerCase().trim().split(" ");
+
+    let newEmojis = []
+
+    let queryLength = queryKeywords.length;
+
+    let queryLengthSum = 0;
+
+    console.log("\n\n\n NEW LINE \n\n\n")
+
+
+    if (val.toLowerCase() != "") {
+      emojiData.forEach((item, index) => {
+        let removeDuplicates = [...new Set(item.keywords.trim().split(" "))];
+        queryLengthSum = 0;
+        queryKeywords.forEach((query, queryIndex) => {
+          removeDuplicates.forEach(keyword => {
+            if (keyword.indexOf(query) === 0) {
+              queryLengthSum++;
+            }
+          })
+        })
+  
+        if (queryLength <= queryLengthSum) {
+          newEmojis.push(item)
+        }
+  
+      })
+    }
+
+    setNewEmojiData(newEmojis)
   }
   return (
     <div className="container">
       <Header />
       <Search onChange={onChange} />
-      <Results emojiFiltered={search === "" ? emojiData : emojiData.filter(item => item.keywords.includes(search))} />
+      <Results emojiFiltered={searchQuery === "" ? emojiData : newEmojiData} />
     </div>
   )
 }
