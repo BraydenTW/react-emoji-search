@@ -33,7 +33,7 @@ function Container() {
         queryLengthSum = 0;
         queryKeywords.forEach((query, queryIndex) => {
           removeDuplicates.forEach(keyword => {
-            if (keyword.indexOf(query) === 0) {
+            if (keyword.indexOf(query) >= 0) {
               queryLengthSum++;
             }
           })
