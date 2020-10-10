@@ -28,10 +28,10 @@ function Container() {
 
 
     if (val.toLowerCase() != "") {
-      emojiData.forEach((item, index) => {
+      emojiData.forEach((item) => {
         let removeDuplicates = [...new Set(item.keywords.trim().split(" "))];
         queryLengthSum = 0;
-        queryKeywords.forEach((query, queryIndex) => {
+        queryKeywords.forEach((query) => {
           removeDuplicates.forEach(keyword => {
             if (keyword.indexOf(query) === 0) {
               queryLengthSum++;
