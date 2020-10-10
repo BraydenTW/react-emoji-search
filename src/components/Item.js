@@ -23,9 +23,6 @@ function Item(props) {
       >
         {props.symbol}
       </span>
-      <label className="item-name">
-        {props.title}
-      </label>
     </div>
   )
 }
