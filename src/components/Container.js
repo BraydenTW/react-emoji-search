@@ -27,7 +27,7 @@ function Container() {
     console.log("\n\n\n NEW LINE \n\n\n")
 
 
-    if (val.toLowerCase() != "") {
+    if (val.toLowerCase() !== "") {
       emojiData.forEach((item) => {
         let removeDuplicates = [...new Set(item.keywords.trim().split(" "))];
         queryLengthSum = 0;
