@@ -1,0 +1,72 @@
+.item{
+  position: relative;
+  width: 180px;
+  height: 180px;
+  background: white;
+  margin: 15px;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: -5px -5px 15px #ffffff99, 5px 5px 15px #152b4711;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  flex-direction: column;
+  box-sizing: border-box;
+  cursor: pointer;
+  transition: box-shadow 0.3s;
+}
+
+.item:hover{
+  box-shadow: -5px -5px 15px #ffffff99, 5px 5px 15px #152b4711, 0 0 0 5px #0077ff49;
+}
+
+.item-copy{
+  position: absolute;
+  background: #0077ff33;
+  color: #0077ff;
+  font-weight: 700;
+  border-radius: 6px;
+  font-size: 0.8em;
+  padding: 6px;
+  bottom: 8px;
+  left: 8px;
+  transition: opacity 0.3s;
+  cursor: pointer;
+}
+
+.label-true{
+  opacity: 1;
+}
+
+.label-false{
+  opacity: 0;
+}
+
+.item-emoji{
+  font-size: 2.4em;
+  cursor: pointer;
+}
+
+.item-name{
+  font-size: 0.9em;
+  line-height: 1.4em;
+  width: 150px;
+  text-align: center;
+  cursor: pointer;
+}
+
+@media only screen and (max-width: 600px) {
+  .item{
+    height: 120px;
+    width: 130px;
+  }
+  .item-emoji{
+    font-size: 1.6em;
+  }
+  .item-name{
+    font-size: 0.8em;
+    margin: 0px 20px;
+    padding: 0px 20px;
+    box-sizing: border-box;
+  }
+}

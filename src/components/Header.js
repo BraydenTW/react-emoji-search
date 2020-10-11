@@ -1,5 +1,6 @@
 import React from 'react'
 import GitHubButton from 'react-github-btn'
+import './Header.css'
 
 function Header() {
   

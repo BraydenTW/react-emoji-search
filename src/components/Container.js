@@ -2,8 +2,8 @@ import React, { useState, useEffect } from 'react'
 import Header from './Header.js'
 import Search from './Search.js'
 import Results from './Results.js'
-
-import data from './data.json'
+import data from '../json/data.json'
+import './Container.css'
 
 function Container() {
   const [emojiData, setEmojiData] = useState([]);

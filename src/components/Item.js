@@ -1,4 +1,5 @@
 import React, {useState} from 'react'
+import './Item.css'
 
 function Item(props) {
   const [fadeIn, setFadeIn] = useState(false);
