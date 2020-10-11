@@ -38,7 +38,7 @@ describe('Search', () => {
 		})
 	})
 
-	it('should not find an emojis', () => {
+	it('should not find emojis', () => {
 		cy.get('.search').type('dasdnaoianfoianfo')
 		cy.get('.results').should('exist')
 		cy.get('.item').should('not.exist')
