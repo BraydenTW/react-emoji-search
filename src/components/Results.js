@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react'
+import { useEffect } from 'react';
 import Item from './Item.js'
 import Clipboard from "clipboard";
 import { v4 as uuidv4 } from 'uuid';
