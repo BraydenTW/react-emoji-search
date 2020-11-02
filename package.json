@@ -8,10 +8,10 @@
     "@testing-library/react": "^9.3.2",
     "@testing-library/user-event": "^7.1.2",
     "clipboard": "^2.0.6",
-    "react": "^16.13.1",
-    "react-dom": "^16.13.1",
+    "react": "^17.0.1",
+    "react-dom": "^17.0.1",
     "react-github-btn": "^1.2.0",
-    "react-scripts": "3.4.3",
+    "react-scripts": "4.0.0",
     "uuid": "^8.3.1"
   },
   "scripts": {
