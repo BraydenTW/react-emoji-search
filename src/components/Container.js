@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react'
+import { useState, useEffect } from 'react';
 import Header from './Header.js'
 import Search from './Search.js'
 import Results from './Results.js'
