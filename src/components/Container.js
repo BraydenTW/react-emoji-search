@@ -54,7 +54,7 @@ function Container() {
       <Header />
       <Search onChange={onChange} />
       <Results emojiFiltered={searchQuery === "" ? emojiData : newEmojiData} />
-      <ScrollToTopButton/>
+      <ScrollToTopButton />
     </div>
   )
 }
