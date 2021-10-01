@@ -1,0 +1,26 @@
+.scroll-to-top-wrapper {
+  position: fixed;
+  bottom: 1rem;
+  right: 1rem;
+}
+
+.scroll-top-button {
+  padding: 1rem;
+  border-radius: 1rem;
+  background-color: white;
+  box-shadow: -5px -5px 15px #ffffff99, 5px 5px 15px #152b4711;
+  display: flex;
+  align-items: center;
+  justify-items: center;
+  cursor: pointer;
+  animation: fadeIn 0.5s;
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
