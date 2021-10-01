@@ -7,13 +7,14 @@
 .scroll-top-button {
   padding: 1rem;
   border-radius: 1rem;
-  background-color: white;
-  box-shadow: -5px -5px 15px #ffffff99, 5px 5px 15px #152b4711;
+  background-color: var(--card-background-color);
+  box-shadow: -5px -5px 15px var(--card-shadow-color-top-left), 5px 5px 15px var(--card-shadow-color-bottom-right);
   display: flex;
   align-items: center;
   justify-items: center;
   cursor: pointer;
   animation: fadeIn 0.5s;
+  transition: 0.4s;
 }
 
 @keyframes fadeIn {
