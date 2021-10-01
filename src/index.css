@@ -5,7 +5,7 @@ body{
   margin: 0;
   min-height: 100vh;
   width: 100%;
-  background: #eaedf0;
+  /* background-color: var(--light-background); */
 }
 
 #root{
@@ -13,4 +13,29 @@ body{
   width: auto;
   margin: auto;
   padding: 20px;
+}
+
+.theme-light
+{
+    /* --background-color: ; */
+    /* --text-color-first: ; */
+    /* --text-color-second: ; */
+    /* --card-background-color: ; */
+    /* --border-color: ; */
+    --dark-text: #5E4B56;
+    --accent: #dbe7e4;
+    --button-border: #5E4B56;
+    --dark-background: #DBE7E4;
+    --light-text: #5E4B56;
+    --light-background: #EDDCD2;
+}
+  
+.theme-dark
+{
+    --dark-text: #292929;
+    --dark-background: #2F4550;
+    --light-background: #586F7C;
+    --accent: #b8dbd9;
+    --button-border: #b8dbd9;
+    --light-text: #F9F8F8;
 }

@@ -1,5 +1,6 @@
 import GitHubButton from 'react-github-btn'
 import './Header.css'
+import Toggle from './Toggle';
 
 function Header() {
   
@@ -16,6 +17,12 @@ function Header() {
           &nbsp;&nbsp;
           <GitHubButton href="https://github.com/BraydenTW/react-emoji-search/fork" data-color-scheme="no-preference: light; light: light; dark: light;" data-icon="octicon-repo-forked" data-size="large" data-show-count="true" aria-label="Fork BraydenTW/react-emoji-search on GitHub">Fork</GitHubButton>
       </p>
+      <p>
+          Switch to your preferred theme.
+      </p>
+      <div className="container">
+            <Toggle />
+        </div>
     </div>
   )
 }
