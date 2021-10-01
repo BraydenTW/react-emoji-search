@@ -23,10 +23,10 @@ const ScrollToTopButton = () => {
   }, []);
 
   return (
-    <div className='scroll-to-top-wrapper'>
+    <div className="scroll-to-top-wrapper">
       {showScrollToTop && (
         <div onClick={scrollToTop}>
-          <div className='scroll-top-button'>
+          <div className="scroll-top-button">
             <UpIcon />
           </div>
         </div>
