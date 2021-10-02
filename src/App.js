@@ -1,17 +1,16 @@
-import React, { useEffect} from 'react';
+import React, { useEffect} from 'react'
 import Container from './components/Container'
-import { keepTheme } from './utils/theme';
+import { keepTheme } from './utils/theme'
 
-function App()
-{
-    useEffect(() =>
-    {
-        keepTheme()
-    });
+function App() {
+    
+  useEffect(() => {
+    keepTheme()
+  })
 
-    return (
-        <Container />
-    );
+  return (
+    <Container />
+  )
 }
 
-export default App;
+export default App

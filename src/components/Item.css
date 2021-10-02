@@ -17,7 +17,7 @@
 }
 
 .item:hover{
-    box-shadow: -5px -5px 15px var(--card-shadow-color-top-left), 5px 5px 15px var(--card-shadow-color-bottom-right), 0 0 0 5px var(--border-color);
+  box-shadow: -5px -5px 15px var(--card-shadow-color-top-left), 5px 5px 15px var(--card-shadow-color-bottom-right), 0 0 0 5px var(--border-color);
 }
 
 .item-copy{
