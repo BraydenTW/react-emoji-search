@@ -5,7 +5,7 @@ import { v4 as uuidv4 } from "uuid";
 import { ReactComponent as NoResultSVG } from "../assets/no-result.svg";
 import "./Results.css";
 
-function Results({ emojiFiltered }) {
+function Results({ emojiFiltered = [] }) {
   useEffect(() => {
     const clipboard = new Clipboard(".item");
     return () => {
