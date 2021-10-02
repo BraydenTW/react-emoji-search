@@ -2,22 +2,22 @@
   position: relative;
   width: 180px;
   height: 180px;
-  background: white;
+  background: var(--card-background-color);
   margin: 15px;
   padding: 20px;
   border-radius: 12px;
-  box-shadow: -5px -5px 15px #ffffff99, 5px 5px 15px #152b4711;
+  box-shadow: -5px -5px 15px var(--card-shadow-color-top-left), 5px 5px 15px var(--card-shadow-color-bottom-right);
   display: flex;
   align-items: center;
   justify-content: space-around;
   flex-direction: column;
   box-sizing: border-box;
   cursor: pointer;
-  transition: box-shadow 0.3s;
+  transition: 0.4s;
 }
 
 .item:hover{
-  box-shadow: -5px -5px 15px #ffffff99, 5px 5px 15px #152b4711, 0 0 0 5px #0077ff49;
+  box-shadow: -5px -5px 15px var(--card-shadow-color-top-left), 5px 5px 15px var(--card-shadow-color-bottom-right), 0 0 0 5px var(--border-color);
 }
 
 .item-copy{
