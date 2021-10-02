@@ -6,7 +6,7 @@ import { keepTheme } from '../utils/theme'
 
 function Header() {
   
-  let theme = localStorage.getItem('theme')
+  const theme = localStorage.getItem('theme')
   const [togClass, setTogClass] = useState('dark')
 
   const callback = useCallback((theme) => {
@@ -15,7 +15,7 @@ function Header() {
 
   useEffect(() => {
     keepTheme()
-    let storedTheme = localStorage.getItem('theme')
+    const storedTheme = localStorage.getItem('theme')
     setTogClass(storedTheme)
   }, [togClass])
   

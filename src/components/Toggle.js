@@ -7,7 +7,7 @@ import './Toggle.css'
 function Toggle({ parentCallback }) {
   
   const [togClass, setTogClass] = useState('light')
-  let theme = localStorage.getItem('theme')
+  const theme = localStorage.getItem('theme')
 
   const handleOnClick = () => {
     if(localStorage.getItem('theme') === 'dark') {
@@ -23,7 +23,7 @@ function Toggle({ parentCallback }) {
   }
 
   useEffect(() => {
-    let storedTheme = localStorage.getItem('theme')
+    const storedTheme = localStorage.getItem('theme')
     setTogClass(storedTheme)
   }, [theme])
 
