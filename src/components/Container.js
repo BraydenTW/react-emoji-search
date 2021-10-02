@@ -3,7 +3,7 @@ import Header from "./Header.js";
 import Search from "./Search.js";
 import Results from "./Results.js";
 import data from "../json/data.json";
-import searchGifUrl from "../assets/search.gif";
+import { ReactComponent as KeyboardSVG } from "../assets/keyboard.svg";
 import ScrollToTopButton from "./ScrollToTopButton";
 import "./Container.css";
 
@@ -55,13 +55,8 @@ function Container() {
       <Search onChange={onChange} />
       {!searchQuery ? (
         <div className="first-render">
-          <h2>⌨️ Please Type Keywords To Search 👆🏼</h2>
-          <img
-            src={searchGifUrl}
-            alt="Search for emojis"
-            width="40%"
-            height="40%"
-          />
+          <h2>Please type keywords to search</h2>
+          <KeyboardSVG />
         </div>
       ) : (
         <Results
