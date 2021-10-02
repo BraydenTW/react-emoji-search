@@ -27,7 +27,7 @@ input {
 
 .light {
   --background-color: #eaedf0;
-  --text-color-first: rgb(43, 43, 43);
+  --text-color-first: #000000;
   --card-background-color: #ffffff;
   --card-shadow-color-top-left: #ffffff99;
   --card-shadow-color-bottom-right: #152b4711;
