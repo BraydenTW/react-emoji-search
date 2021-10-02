@@ -2,7 +2,9 @@
 
 A simple emoji search tool made with ReactJS.
 
-![Screenshot of web app](https://2s9e3bif52.execute-api.eu-central-1.amazonaws.com/production/screenshot?url=https%3A%2F%2Fbraydentw.github.io%2Freact-emoji-search&color=66abf2)
+![Screenshot of web app](https://i.ibb.co/g4ZwTs6/9-A8-EBC50-F031-4401-B672-5-DAB70-C37832.jpg)
+
+View it live: https://react-emoji-search.braydentw.vercel.app
 
 ---
 
