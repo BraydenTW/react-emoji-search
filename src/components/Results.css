@@ -9,3 +9,9 @@
 .no-result {
   color: rgb(43, 43, 43);
 }
+
+.no-result-text
+{
+  color: var(--text-color-first);
+  transition: 0.4s;
+}

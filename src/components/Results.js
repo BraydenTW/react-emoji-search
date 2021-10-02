@@ -29,7 +29,7 @@ function Results({ emojiFiltered }) {
           ))
       ) : (
         <div className="no-result">
-          <h3>No Results Found</h3>
+          <h3 className="no-result-text">No Results Found</h3>
           <NoResultSVG />
         </div>
       )}
