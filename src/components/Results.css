@@ -7,5 +7,6 @@
 }
 
 .no-result {
-  color: rgb(43, 43, 43);
+  color: var(--text-color-first);
+  transition: 0.4s;
 }
