@@ -1,8 +1,6 @@
-import { useEffect } from "react";
+import React, { useEffect } from "react";
 import Item from "./Item.js";
 import Clipboard from "clipboard";
-import { v4 as uuidv4 } from "uuid";
-import { ReactComponent as NoResultSVG } from "../assets/no-result.svg";
 import "./Results.css";
 
 function Results({ emojiFiltered = [] }) {
@@ -18,20 +16,16 @@ function Results({ emojiFiltered = [] }) {
       {emojiFiltered.length ? (
         emojiFiltered
           .slice(0, 100)
-          .map((emoji) => (
+          .map((emoji, index) => (
             <Item
-              id={uuidv4()}
+              id={index}
               symbol={emoji.symbol}
               title={emoji.title}
               keywords={emoji.keywords}
-              key={uuidv4()}
             />
           ))
       ) : (
-        <div className="no-result">
-          <h3>No Results Found</h3>
-          <NoResultSVG />
-        </div>
+        <p className="no-result">No Results Found</p>
       )}
     </div>
   );

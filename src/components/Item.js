@@ -1,13 +1,13 @@
-import { useState } from 'react';
-import './Item.css'
+import React, { useState } from "react";
+import "./Item.css";
 
 function Item(props) {
   const [fadeIn, setFadeIn] = useState(false);
 
-  const handleClick = e => {
-    setFadeIn(true)
-    setTimeout(() => setFadeIn(false), 900)
-  }
+  const handleClick = (e) => {
+    setFadeIn(true);
+    setTimeout(() => setFadeIn(false), 900);
+  };
 
   return (
     <div
@@ -18,12 +18,12 @@ function Item(props) {
       data-clipboard-text={props.symbol}
       data-keywords={props.keywords}
     >
-      <div className={`item-copy ${fadeIn?'label-true':'label-false'}`}>
+      <div className={`item-copy ${fadeIn ? "label-true" : "label-false"}`}>
         Copied!
       </div>
       <span className="item-emoji">{props.symbol}</span>
     </div>
-  )
+  );
 }
 
-export default Item
+export default Item;

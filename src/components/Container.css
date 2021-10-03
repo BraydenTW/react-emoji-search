@@ -7,7 +7,8 @@
 }
 
 .first-render {
-  margin: 1em;
-  font-size: 0.7em;
+  margin: 4em 0;
+  font-size: 0.8em;
+  opacity: 0.7;
   text-align: center;
 }

@@ -1,9 +1,10 @@
-import './Search.css'
+import React from "react";
+import "./Search.css";
 
 function Search(props) {
-  const onChange = e => {
-    props.onChange(e.target.value)
-  }
+  const onChange = (e) => {
+    props.onChange(e.target.value);
+  };
   return (
     <input
       className="search"
@@ -11,7 +12,7 @@ function Search(props) {
       placeholder="Search for a keyword..."
       onChange={onChange}
     />
-  )
+  );
 }
 
-export default Search
+export default Search;
