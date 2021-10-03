@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import "./Item.css";
 
-function Item(props) {
+function Item({ id, symbol, keywords }) {
   const [fadeIn, setFadeIn] = useState(false);
 
   const handleClick = (e) => {
@@ -11,17 +11,17 @@ function Item(props) {
 
   return (
     <div
-      key={props.id}
+      key={id}
       className="item"
       title="Copy Emoji to Clipboard 📋"
       onClick={handleClick}
-      data-clipboard-text={props.symbol}
-      data-keywords={props.keywords}
+      data-clipboard-text={symbol}
+      data-keywords={keywords}
     >
       <div className={`item-copy ${fadeIn ? "label-true" : "label-false"}`}>
         Copied!
       </div>
-      <span className="item-emoji">{props.symbol}</span>
+      <span className="item-emoji">{symbol}</span>
     </div>
   );
 }

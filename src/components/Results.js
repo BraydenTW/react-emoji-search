@@ -17,12 +17,7 @@ function Results({ emojiFiltered = [] }) {
         emojiFiltered
           .slice(0, 100)
           .map((emoji, index) => (
-            <Item
-              id={index}
-              symbol={emoji.symbol}
-              title={emoji.title}
-              keywords={emoji.keywords}
-            />
+            <Item id={index} symbol={emoji.symbol} keywords={emoji.keywords} />
           ))
       ) : (
         <p className="no-result">No Results Found</p>
