@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import PropTypes from 'prop-types';
 import "./Item.css";
 
 function Item({ id, symbol, keywords }) {
@@ -24,6 +25,13 @@ function Item({ id, symbol, keywords }) {
       <span className="item-emoji">{symbol}</span>
     </div>
   );
+}
+
+
+Item.propTypes = {
+  id: PropTypes.number,
+  symbol: PropTypes.string,
+  keywords: PropTypes.string
 }
 
 export default Item;

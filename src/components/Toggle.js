@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from 'react'
+import PropTypes from 'prop-types';
 import { ReactComponent as SunIcon } from '../assets/sun.svg'
 import { ReactComponent as MoonIcon } from '../assets/moon.svg'
 import { setTheme } from '../utils/theme'
@@ -43,6 +44,11 @@ function Toggle({ parentCallback }) {
       </label>
     </div>
   )
+}
+
+
+Toggle.propTypes = {
+  parentCallback: PropTypes.func
 }
 
 export default Toggle
