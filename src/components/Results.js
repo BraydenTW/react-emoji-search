@@ -1,4 +1,5 @@
 import React, { useEffect } from "react";
+import PropTypes from 'prop-types';
 import Item from "./Item.js";
 import Clipboard from "clipboard";
 import "./Results.css";
@@ -24,6 +25,15 @@ function Results({ emojiFiltered = [] }) {
       )}
     </div>
   );
+}
+
+
+Item.defaultProps = {
+  emojiFiltered: []
+};
+
+Item.propTypes = {
+  emojiFiltered: PropTypes.array
 }
 
 export default Results;
