@@ -9,7 +9,15 @@ function keepTheme() {
     setTheme(theme)
   }
   else {
-    setTheme('light')
+    const doesUserPreferDarkMode = window.matchMedia([
+      '(prefers-color-scheme: dark)',
+    ]).matches
+
+    if (doesUserPreferDarkMode) {
+      setTheme('dark')
+    } else {
+      setTheme('light')
+    }
   }
 }
 
