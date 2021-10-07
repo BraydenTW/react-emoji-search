@@ -31,7 +31,7 @@ function Toggle({ parentCallback }) {
   return (
     <div className="container-toggle">
       <label>
-        <input type="checkbox" id="toggle-checkbox" className="toggle-checkbox" onChange={handleOnClick} checked={togClass === "dark"} />
+        <input type="checkbox" id="toggle-checkbox" className="toggle-checkbox" onChange={handleOnClick} checked={togClass === "dark"} aria-label="toggle-checkbox" />
         <div className='toggle-slot'>
           <div className='sun-icon-wrapper'>
             <SunIcon color="#ffbb52" className="sun-icon" />
