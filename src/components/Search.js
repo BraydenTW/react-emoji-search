@@ -1,7 +1,7 @@
 import React from "react";
 import PropTypes from 'prop-types';
 import "./Search.css";
-const delay = 1000;
+const delay = 400;
 function Search(props) {
    const debounce = (func, interval) => {
      let timeout;
