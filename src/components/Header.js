@@ -5,20 +5,20 @@ import Toggle from './Toggle'
 import { keepTheme } from '../utils/theme'
 
 function Header() {
-  
+
   const theme = localStorage.getItem('theme')
   const [togClass, setTogClass] = useState('dark')
 
   const callback = useCallback((theme) => {
     setTogClass(theme)
-  }, [])
+  }, [setTogClass])
 
   useEffect(() => {
     keepTheme()
     const storedTheme = localStorage.getItem('theme')
     setTogClass(storedTheme)
   }, [togClass])
-  
+
   return (
     <div className="header">
       <h1>
