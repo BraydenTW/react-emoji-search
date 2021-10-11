@@ -4,8 +4,8 @@ function setTheme(themeName) {
 }
 
 function keepTheme() {
-  if(localStorage.getItem('theme')) {
-    const theme = localStorage.getItem('theme')
+  const theme = localStorage.getItem('theme')
+  if (theme) {
     setTheme(theme)
   }
   else {

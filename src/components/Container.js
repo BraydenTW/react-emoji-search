@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React, { useState, useEffect, useCallback } from "react";
 import Header from "./Header.js";
 import Search from "./Search.js";
 import Results from "./Results.js";
@@ -15,7 +15,7 @@ function Container() {
     setEmojiData(data);
   }, []);
 
-  const onChange = (val) => {
+  const onChange = useCallback((val) => {
     setSearchQuery(val.toLowerCase());
 
     const queryKeywords = val.toLowerCase().trim().split(" ");
@@ -47,7 +47,7 @@ function Container() {
     }
 
     setNewEmojiData(newEmojis);
-  };
+  }, [setNewEmojiData, setSearchQuery, emojiData]);
   return (
     <div className="container">
       <Header />
